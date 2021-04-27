@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/diamon.PNG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="facebook.com">
+    <link rel="stylesheet" href="google.com">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/logo.PNG">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <div id="bot_chat">
+        <img src="./assets/css/diamon.PNG" alt="" class="bot_chat-logo">
+        <div class="hidden-header_botchat"></div>
+        <iframe class="chat_bot-wroking"
+            style="border: 2px solid skyblue; border-radius: 2px;"
+            allow="microphone;"
+            width="300"
+            height="400"
+            src="https://console.dialogflow.com/api-client/demo/embedded/38ab177c-cd4b-4143-9a53-33fc8fd3be7e">
+         </iframe>
+    </div>
+    <div class="icon-bot_chat" onclick="FunctionBotChat()">
+        <i class="fab fa-facebook-messenger bot_chat-icon"></i>
+    </div>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                <nav class="header_navbar">
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item header_navbar--has-qr header_navbar-item--separate">
+                            Information
+                            <div class="header_qr">
+                                <ul class="header_qr-img">
+                                    <li class="text_info text_info_link"><a href="">Email:lacthai08@gmail.com</a></li>
+                                    <li class="text_info">Phone number: 07982319101</li>
+                                    <li class="text_info text_deco">~ @projectSHOPAI ~</li>
+                                </ul>
+                            </div>
+            
+                        </li>
+                        <li class="header_navbar-item">
+                            <span class="header_navbar-title--no-pointer">Contact</span>
+                            <a href="" class="header_navbar-icon-link">
+                                <i class="header_navbar-icon fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="header_navbar-icon-link">
+                                <i class="header_navbar-icon fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <img src="./assets/css/diamon.PNG" alt="" class="header_img">
+                    <ul class="header_navbar-list">
+                        <li class="header_navbar-item">
+                            <a href="" class="header_navbar-link">
+                                <i class="header_navbar-icon far fa-bell"></i>
+                                Notify
+                            </a>
+
+                            <div class="header_notify">
+                                <header class="header_notify-header">
+                                    <h3>New Notify</h3>
+                                </header>
+                                <ul class="header_notify-list">
+                                    <li class="header_notify-item">
+                                        <a href="" class="header_notify-link">
+                                            <img src="" alt="header_notify-img">
+                                            <div class="header_notify-info">
+                                                <span class="header_notify-name">
+
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header_navbar-item">
+                            <a href="" class="header_navbar-link">
+                                <i class="header_navbar-icon far fa-question-circle"></i>
+                                Help
+                            </a>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item--strong header_navbar-item--separate" >
+                            <button id="sign_up" onclick="js_sign_up">Sign up</button>
+                        </li>
+                        <li class="header_navbar-item header_navbar-item--strong header_navbar-item--separate_log-in" id="Log_in">
+                            <button id="Log_in" onclick="js_Log_in">Log in</button>
+                        </li>
+                        <!-- when log in sucess -->
+                        <!-- <li class="header_navbar-item header_navbar-user">
+                            <img src="https://www.pavilionweb.com/wp-content/uploads/2017/03/man-300x300.png" alt="" class="header_navbar-user-img">
+                            <span class="header_navbar-user-name">Gia Lac</span>
+
+                            <ul class="header_navbar-user-menu">
+                                <li class="header_navbar-user-item">
+                                    <a href="">Setting</a>
+                                </li>
+                                <li class="header_navbar-user-item">
+                                    <a href="">Purchase Order</a>
+                                </li>
+                                <li class="header_navbar-user-item">
+                                    <a href="">Log out</a>
+                                </li>
+                            
+                            </ul>
+                        </li> -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="search">
+          <div class="header_with-search">
+                <div class="search_input-wrap">
+                    <input type="text" class="search_input" placeholder="Enter the name or product code you want to search">
+
+                    <!-- search history -->
+                    <div class="search-history">
+                        <h3 class="search-history_heading">Search history</h3>
+                        <ul class="search-history_list">
+                            <li class="search-history_list--item">
+                                <a href="" class="search-history_list--item-number">Jordan 1</a>
+                            </li>
+                            <li class="search-history_list--item">
+                                <a href="" class="search-history_list--item-numer">yeezy 700</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header_input-select">
+                    <i class="fas fa-search header_icon-search"></i>
+                </div>
+                <!-- cart layout -->
+                <div class="header_icon-cart">
+                    <div class="header_cart-wrap">
+                        <i class="fas fa-cart-plus icon-cart"></i>
+                        <span class="header_cart-notice">3</span>
+
+                        <!-- No cart :header_cart-list--no-cart -->
+                        <div class="header_cart-list ">
+                            <img src="./assets/css/no-cart.jpg" alt="" class="no_cart-img">
+
+                            <h4 class="header_cart-heading">Product added to cart</h4>
+                            <ul class="header_cart-list-item">
+                                <!-- cart item -->
+                                <li class="header_cart-item">
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column">Product</span>
+                                        <span class="cart-price cart-header cart-column">Price</span>
+                                        <span class="cart-quantity cart-header cart-column">Amount</span>
+                                    </div>
+                                </li>
+                                
+                                    <div class="cart-items">
+                                        <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <img class="cart-item-image" src="https://swagger.com.vn/wp-content/uploads/2020/03/Nike-Air-Jordan-1-Bred-Toe.jpg" width="100" height="100">
+                                            <span class="cart-item-title">Nike Air Jordan 1</span>
+                                        </div>
+                                        <span class="cart-price cart-column">300$</span>
+                                        <div class="cart-quantity cart-column">
+                                            <input class="cart-quantity-input" type="number" value="1">
+                                            <button class="btn btn-danger" type="button">X</button>
+                                        </div>
+                                    </div>
+                                
+                                
+                                    <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <img class="cart-item-image" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/162056-5.png" width="100" height="100">
+                                            <span class="cart-item-title">Converse White</span>
+                                        </div>
+                                        <span class="cart-price cart-column">100$</span>
+                                        <div class="cart-quantity cart-column">
+                                            <input class="cart-quantity-input" type="number" value="2">
+                                            <button class="btn btn-danger" type="button">X</button>
+                                        </div>
+                                    </div>
+                               
+                                    <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <img class="cart-item-image" src="https://i.pinimg.com/originals/5d/d3/3a/5dd33a451e0fae6395bfc41729eb838d.jpg" width="100" height="100">
+                                            <span class="cart-item-title">Vans Custome</span>
+                                        </div>
+                                        <span class="cart-price cart-column">320$</span>
+                                        <div class="cart-quantity cart-column">
+                                            <input class="cart-quantity-input" type="number" value="2">
+                                            <button class="btn btn-danger" type="button">X</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <img class="cart-item-image" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/162056-5.png" width="100" height="100">
+                                            <span class="cart-item-title">Converse White</span>
+                                        </div>
+                                        <span class="cart-price cart-column">100$</span>
+                                        <div class="cart-quantity cart-column">
+                                            <input class="cart-quantity-input" type="number" value="2">
+                                            <button class="btn btn-danger" type="button">X</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-row">
+                                        <div class="cart-item cart-column">
+                                            <img class="cart-item-image" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/162056-5.png" width="100" height="100">
+                                            <span class="cart-item-title">Converse White</span>
+                                        </div>
+                                        <span class="cart-price cart-column">100$</span>
+                                        <div class="cart-quantity cart-column">
+                                            <input class="cart-quantity-input" type="number" value="2">
+                                            <button class="btn btn-danger" type="button">X</button>
+                                        </div>
+                                    </div>
+                
+                            </ul>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">TOTAL:</strong>
+                                <span class="cart-total-price">500$</span>
+                            </div>
+                            <button class="header_cart-view-cart btn btn--primary"><a href="" class="header_cart-view-name">view cart</a></button>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+        <div class="app_container">
+           <div class="grid">
+            <div class="grid_row app_content">
+                <div class="grid_column-2">
+                 <nav class="category">
+                     <h3 class="category_heading">
+                         <i class="category_heading-icon fas fa-list-ul"></i>
+                         CATEGORY
+                     </h3>
+     
+     
+                     <ul class="category-list">
+                         <li class="category-item category-item--active">
+                             <a href="#" class="category-item_link">Best Seller</a>
+                         </li>
+     
+                         <li class="category-item">
+                             <a href="#" class="category-item_link">Selling</a>
+                         </li>
+     
+                         <li class="category-item">
+                             <a href="#" class="category-item_link">Product</a>
+                         </li>
+                         
+                         <li class="category-item">
+                            <a href="#" class="category-item_link">Hot</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item_link">New</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item_link">Shoes</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item_link">clothes</a>
+                        </li>
+                     </ul>
+                 </nav>
+                </div>
+ 
+                <div class="grid_column-10">
+                    <div class="Home-filter">
+                        <button class="btn Home-filter_btn Home-filter_label">All</button>
+                        <button class="btn Home-filter_btn Home-filter_btnHot">Hot</button>
+                        <button class="btn Home-filter_btn">low-high</button>
+                        <button class="btn Home-filter_btn">high-low</button>
+                        <div class="home-filter_page">
+                            <span class="home-filter_page-num">
+                                <span class="home-filter_page-current">1</span>
+                                /14
+                            </span>
+
+                            <div class="home-filter_page-control">
+                                <a href="" class="home-filter_page-btn home-filter_page-btn--disabled">
+                                    <i class="home-filter_page-icon fas fa-chevron-left"></i>
+                                </a>
+                                <a href="" class="home-filter_page-btn">
+                                    <i class="home-filter_page-icon fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-product">
+                        <div class="grid_row">
+                            <!-- product item -->
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home_product-item-img2"><img class="img_pr" src="https://swagger.com.vn/wp-content/uploads/2020/03/Nike-Air-Jordan-1-Bred-Toe.jpg" alt=""></div>
+                                    <h4 class="home-product-item_name">Nike Air Jordan 1 Bred Toe Pk God Factory</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">420$</sapn>
+                                        <span class="home-product-item_price-current">300$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Nike</sapn>
+                                        <span class="home-product-item_origin-name">Jordan</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home_product-item-img2"><img class="img_pr" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/162056-5.png" alt=""></div>
+                                    <!-- <div class="home-product-item_img" style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/162056-5.png);"></div> -->
+                                    <h4 class="home-product-item_name">Converse Chuck Taylor All Star 1970s White</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">150$</sapn>
+                                        <span class="home-product-item_price-current">100$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Converse</sapn>
+                                        <span class="home-product-item_origin-name">Chuck Taylor</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://product.hstatic.net/1000282067/product/195483_01.jpg_201a6d3044944ad0b91c790fc3a7d956_master.jpeg);"></div>
+                                    <h4 class="home-product-item_name">Adidas Yeezy Boost 700 'Wave Runner' B75571</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">820$</sapn>
+                                        <span class="home-product-item_price-current">750$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Adidas</sapn>
+                                        <span class="home-product-item_origin-name">Yeezy</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://i.pinimg.com/originals/5d/d3/3a/5dd33a451e0fae6395bfc41729eb838d.jpg);"></div>
+                                    <h4 class="home-product-item_name">Vans Custom Sneaker</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">400$</sapn>
+                                        <span class="home-product-item_price-current">320$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Vans</sapn>
+                                        <span class="home-product-item_origin-name">Vans custom</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                    <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">500$</sapn>
+                                        <span class="home-product-item_price-current">420$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Swagger</sapn>
+                                        <span class="home-product-item_origin-name"> Balenciaga</span>
+                                    </div>
+                                
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                    <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">500$</sapn>
+                                        <span class="home-product-item_price-current">420$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Swagger</sapn>
+                                        <span class="home-product-item_origin-name"> Balenciaga</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                             <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                    <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">500$</sapn>
+                                        <span class="home-product-item_price-current">420$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Swagger</sapn>
+                                        <span class="home-product-item_origin-name"> Balenciaga</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://centimet.vn/wp-content/uploads/1dsdsd-600x800.jpg);"></div>
+                                    <h4 class="home-product-item_name">Balenciaga BB Speed Trainer</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">820$</sapn>
+                                        <span class="home-product-item_price-current">760$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Balenciaga</sapn>
+                                        <span class="home-product-item_origin-name">Speed</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                    <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">500$</sapn>
+                                        <span class="home-product-item_price-current">420$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Swagger</sapn>
+                                        <span class="home-product-item_origin-name"> Balenciaga</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                    <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">500$</sapn>
+                                        <span class="home-product-item_price-current">420$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Swagger</sapn>
+                                        <span class="home-product-item_origin-name"> Balenciaga</span>
+                                    </div>
+                                
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://i.pinimg.com/originals/15/41/0a/15410ad216220647c87652edd4e34c45.jpg);"></div>
+                                    <h4 class="home-product-item_name">Pharrell X NMD Human Race 'Yellow' - Adidas</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">2100$</sapn>
+                                        <span class="home-product-item_price-current">1875$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Adidas</sapn>
+                                        <span class="home-product-item_origin-name">Human Race</span>
+                                    </div>
+                                
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://fandy.vn/wp-content/uploads/2018/07/giay_adidas_nmd_human_multi_01.jpg);"></div>
+                                    <h4 class="home-product-item_name">Adidas NMD Human Race Multicolor</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">2300$</sapn>
+                                        <span class="home-product-item_price-current">2000$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Adidas</sapn>
+                                        <span class="home-product-item_origin-name">Human Race</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://product.hstatic.net/200000042104/product/__ee7583___adidas_pharrell_x_nmd_human_race__inspiration_pack__e6bd7053d2df4e7081b4541887d0d0a6_master.jpg);"></div>
+                                    <h4 class="home-product-item_name">adidas Pharrell x NMD Human Race</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">2800$</sapn>
+                                        <span class="home-product-item_price-current">2300$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Adidas</sapn>
+                                        <span class="home-product-item_origin-name">Human Race</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://i.pinimg.com/originals/15/41/0a/15410ad216220647c87652edd4e34c45.jpg);"></div>
+                                    <h4 class="home-product-item_name">Pharrell X NMD Human Race 'Yellow' - Adidas</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">2100$</sapn>
+                                        <span class="home-product-item_price-current">1875$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Adidas</sapn>
+                                        <span class="home-product-item_origin-name">Human Race</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="grid_column-2-4">
+                                <div class="home_product-item">
+                                    <div class="home-product-item_img" style="background-image: url(https://i.pinimg.com/originals/15/41/0a/15410ad216220647c87652edd4e34c45.jpg);"></div>
+                                    <h4 class="home-product-item_name">Pharrell X NMD Human Race 'Yellow' - Adidas</h4>
+                                    <div class="home-product-item_price">
+                                        <sapn class="home-product-item_price-old">2100$</sapn>
+                                        <span class="home-product-item_price-current">1875$</span>
+                                    </div>
+
+                                    <div class="home-product-item_action">
+                                        <span class="home-product-item_like home-product-item_like--liked">
+                                            <i class="home-product-item_like-empty far fa-heart"></i>
+                                            <i class="home-product-item_like-fill fas fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item_rating">
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="home-product-item__star--gold fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <sapn class="home-product-item_brand">Adidas</sapn>
+                                        <span class="home-product-item_origin-name">Human Race</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">add to cart</button>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+           </div>
+        </div>
+        <!-- advertise -->
+        <div class="advertise">
+            <img src="https://image.freepik.com/free-vector/modern-sale-background-with-product-description_1361-1784.jpg" alt="" class="advertise_img">
+        </div> 
+        <!-- container_2 -->
+        <div class="app_container">
+            <div class="grid">
+             <div class="grid_row app_content">
+                 <div class="grid_column-2">
+                 </div>
+  
+                 <div class="grid_column-10">
+ 
+                     <div class="home-product">
+                         <div class="grid_row">
+                             <!-- product item -->
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/03/Nike-Air-Jordan-1-Bred-Toe.jpg);"></div>
+                                     <h4 class="home-product-item_name">Nike Air Jordan 1 Bred Toe Pk God Factory</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">420$</sapn>
+                                         <span class="home-product-item_price-current">300$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Nike</sapn>
+                                         <span class="home-product-item_origin-name">Jordan</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/162056-5.png);"></div>
+                                     <h4 class="home-product-item_name">Converse Chuck Taylor All Star 1970s White</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">150$</sapn>
+                                         <span class="home-product-item_price-current">100$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Converse</sapn>
+                                         <span class="home-product-item_origin-name">Chuck Taylor</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://product.hstatic.net/1000282067/product/195483_01.jpg_201a6d3044944ad0b91c790fc3a7d956_master.jpeg);"></div>
+                                     <h4 class="home-product-item_name">Adidas Yeezy Boost 700 'Wave Runner' B75571</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">820$</sapn>
+                                         <span class="home-product-item_price-current">750$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Adidas</sapn>
+                                         <span class="home-product-item_origin-name">Yeezy</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://i.pinimg.com/originals/5d/d3/3a/5dd33a451e0fae6395bfc41729eb838d.jpg);"></div>
+                                     <h4 class="home-product-item_name">Vans Custom Sneaker</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">400$</sapn>
+                                         <span class="home-product-item_price-current">320$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Vans</sapn>
+                                         <span class="home-product-item_origin-name">Vans custom</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                     <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">500$</sapn>
+                                         <span class="home-product-item_price-current">420$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Swagger</sapn>
+                                         <span class="home-product-item_origin-name"> Balenciaga</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                     <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">500$</sapn>
+                                         <span class="home-product-item_price-current">420$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Swagger</sapn>
+                                         <span class="home-product-item_origin-name"> Balenciaga</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                              <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                     <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">500$</sapn>
+                                         <span class="home-product-item_price-current">420$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Swagger</sapn>
+                                         <span class="home-product-item_origin-name"> Balenciaga</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://centimet.vn/wp-content/uploads/1dsdsd-600x800.jpg);"></div>
+                                     <h4 class="home-product-item_name">Balenciaga BB Speed Trainer</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">820$</sapn>
+                                         <span class="home-product-item_price-current">760$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Balenciaga</sapn>
+                                         <span class="home-product-item_origin-name">Speed</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                     <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">500$</sapn>
+                                         <span class="home-product-item_price-current">420$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Swagger</sapn>
+                                         <span class="home-product-item_origin-name"> Balenciaga</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://swagger.com.vn/wp-content/uploads/2020/04/balenciaga-triple-s-allover-logo-white.jpg);"></div>
+                                     <h4 class="home-product-item_name"> Balenciaga Triple S Allover Logo White Plus Factory</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">500$</sapn>
+                                         <span class="home-product-item_price-current">420$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Swagger</sapn>
+                                         <span class="home-product-item_origin-name"> Balenciaga</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://i.pinimg.com/originals/15/41/0a/15410ad216220647c87652edd4e34c45.jpg);"></div>
+                                     <h4 class="home-product-item_name">Pharrell X NMD Human Race 'Yellow' - Adidas</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">2100$</sapn>
+                                         <span class="home-product-item_price-current">1875$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Adidas</sapn>
+                                         <span class="home-product-item_origin-name">Human Race</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://fandy.vn/wp-content/uploads/2018/07/giay_adidas_nmd_human_multi_01.jpg);"></div>
+                                     <h4 class="home-product-item_name">Adidas NMD Human Race Multicolor</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">2300$</sapn>
+                                         <span class="home-product-item_price-current">2000$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Adidas</sapn>
+                                         <span class="home-product-item_origin-name">Human Race</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://product.hstatic.net/200000042104/product/__ee7583___adidas_pharrell_x_nmd_human_race__inspiration_pack__e6bd7053d2df4e7081b4541887d0d0a6_master.jpg);"></div>
+                                     <h4 class="home-product-item_name">adidas Pharrell x NMD Human Race</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">2800$</sapn>
+                                         <span class="home-product-item_price-current">2300$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Adidas</sapn>
+                                         <span class="home-product-item_origin-name">Human Race</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://i.pinimg.com/originals/15/41/0a/15410ad216220647c87652edd4e34c45.jpg);"></div>
+                                     <h4 class="home-product-item_name">Pharrell X NMD Human Race 'Yellow' - Adidas</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">2100$</sapn>
+                                         <span class="home-product-item_price-current">1875$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Adidas</sapn>
+                                         <span class="home-product-item_origin-name">Human Race</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div> 
+                             </div>
+                             <div class="grid_column-2-4">
+                                 <div class="home_product-item">
+                                     <div class="home-product-item_img" style="background-image: url(https://i.pinimg.com/originals/15/41/0a/15410ad216220647c87652edd4e34c45.jpg);"></div>
+                                     <h4 class="home-product-item_name">Pharrell X NMD Human Race 'Yellow' - Adidas</h4>
+                                     <div class="home-product-item_price">
+                                         <sapn class="home-product-item_price-old">2100$</sapn>
+                                         <span class="home-product-item_price-current">1875$</span>
+                                     </div>
+ 
+                                     <div class="home-product-item_action">
+                                         <span class="home-product-item_like home-product-item_like--liked">
+                                             <i class="home-product-item_like-empty far fa-heart"></i>
+                                             <i class="home-product-item_like-fill fas fa-heart"></i>
+                                         </span>
+                                         <div class="home-product-item_rating">
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="home-product-item__star--gold fas fa-star"></i>
+                                             <i class="fas fa-star"></i>
+                                         </div>
+                                         <!-- <span class="home-product-item__sold">100 sold</span> -->
+                                     </div>
+                                     <div class="home-product-item_origin">
+                                         <sapn class="home-product-item_brand">Adidas</sapn>
+                                         <span class="home-product-item_origin-name">Human Race</span>
+                                     </div>
+                                 
+                                     <div class="home-product-item_sale-off">
+                                         <span class="home-product-item_sale-off-percent">30%</span>
+                                         <span class="home-product-item_sale-off-label">SALE OFF</span>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+
+                     <ul class="pagination home-product_pagination">
+                         <li class="pagination-item">
+                             <a href="" class="pagination-item_link">
+                                 <i class="pagination-item_icon fas fa-chevron-left"></i>
+                             </a>
+                         </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item_link">1</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item_link">2</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item_link">3</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item_link">4</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item_link">5</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item_link">...</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item_link">12</a>
+                        </li>
+
+                         <li class="pagination-item">
+                            <a href="" class="pagination-item_link">
+                                <i class="pagination-item_icon fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                     </ul>
+                 </div>
+
+             </div>
+            </div>
+         </div>
+
+        <div class="footer_background_img">
+            
+        </div>
+
+        <footer>
+            <div class="container">
+                <!--Bắt Đầu Nội Dung Giới Thiệu-->
+                <div class="noi-dung about">
+                    <h2>About Us</h2>
+                    <p>project at our web shopping AI</p>
+                    <ul class="social-icon">
+                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <!--Kết Thúc Nội Dung Giới Thiệu-->
+                <!--Bắt Đầu Nội Dung Đường Dẫn-->
+                <div class="noi-dung links">
+                    <h2>Contact Link</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Communications</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Policy Terms</a></li>
+                    </ul>
+                </div>
+                <!--Kết Thúc Nội Dung Đường Dẫn-->
+                <!--Bắt Đâu Nội Dung Liên Hệ-->
+                <div class="noi-dung contact">
+                    <h2>Communications</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>1st Street<br />
+                                District 1, Ho Chi Minh City<br />
+                                Viet Nam</span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="#">+84 123 456 789</a>
+                                <br />
+                                <a href="#">+84 987 654 321</a></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="#">lacthai08@mail@gmail.com</a></p>
+                       </li>
+                        <li>
+                            <form class="form">
+                                <input type="email" class="form__field" placeholder="Subscribe Email" />
+                                <button type="button" class="btn  btn_footer btn--primary1  uppercase">Send</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <!--Kết Thúc Nội Dung Liên Hệ-->
+            </div>
+        </footer>
+    </div>
+    
+    <!-- modal layout -->
+     <div id="myModal" class="modal">
+        <div class="modal_overlay" id="a">
+
+        </div> 
+        <div class="modal_body" id="b"> 
+                <!-- authen form -->
+            <div class="auth-from" id="c">
+                <div class="auth-form_contanier">
+                        <div class="auth-form_header">
+                            <span class="close1">X</span>
+                            <h3 class="auth-form_heading">Sign up</h3>
+                            <img src="./assets/css/logo.PNG " alt="" class="logo_auth">
+                            <span class="auth-form_switch-bth">
+                               <button id="Log-in_inmodal">Log in</button>
+                            </span>
+                        </div>
+    
+                        <div class="auth-form_form">
+                            <div class="auth-form_group">
+                                <input type="text" class="auth-from_input" placeholder="Enter your email">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="password" class="auth-from_input" placeholder="Enter your password">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="password" class="auth-from_input" placeholder="Confirm your password">
+                            </div>
+                            <div class="auth-form_controls">
+                                <button class="btn btn-back1">
+                                    BACK
+                                </button>
+                                <button class="btn btn--primary" id="btn-next-to-login">
+                                    NEXT
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                    <div class="auth-from_socials">
+                            <a href="https://www.facebook.com/" class="auth-from_socials--fb btn1 bn--with-icon">
+                                <i class="fab fa-facebook-square auth-from_socials-icon"></i>
+                                Login with Facebook
+                            </a>
+                
+                            <a href="https://www.google.com.vn/" class="auth-from_socials--gg btn1 bn--with-icon">
+                                <i class="fab fa-google-plus-square auth-from_socials-icon"></i>
+                                Login with Google
+                            </a>
+                    </div>
+            </div> 
+
+               <!-- login form -->
+            <div class="auth-from" id="d">  
+                
+                <div class="auth-form_contanier">
+                        <div class="auth-form_header">
+                            <span class="close2">X</span>
+                            <h3 class="auth-form_heading" >Log in</h3>
+                            <img src="./assets/css/logo.PNG " alt="" class="logo_auth">
+                            <span class="auth-form_switch-bth">
+                                <button id="Sign-up_inmodal">Sign up</button>
+                            </span>
+                        </div>
+    
+                        <div class="auth-form_form">
+                            <div class="auth-form_group">
+                                <input type="text" class="auth-from_input" placeholder="Enter your email">
+                            </div>
+                            <div class="auth-form_group">
+                                <input type="password" class="auth-from_input" placeholder="Enter your password">
+                            </div>
+
+                            <div class="auth-form_aside">
+                                <div class="auth-form_help">
+                                    <a href="" class="auth-form_help--link">Forgot password</a>
+                                    <span class="auth-form_help--separate"></span>
+                                    <a href="" class="auth-form_help--link">Need help?</a>
+                                </div>
+                            </div>
+
+                            <div class="auth-form_controls">
+                                <button class="btn btn-back2">
+                                    BACK
+                                </button>
+                                <button class="btn btn--primary">
+                                    LOG IN
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                    <div class="auth-from_socials">
+                            <a href="https://www.facebook.com/" class="auth-from_socials--fb btn1 bn--with-icon">
+                                <i class="fab fa-facebook-square auth-from_socials-icon"></i>
+                                Login with Facebook
+                            </a>
+                
+                            <a href="https://www.google.com.vn/" class="auth-from_socials--gg btn1 bn--with-icon">
+                                <i class="fab fa-google-plus-square auth-from_socials-icon"></i>
+                                Login with Google
+                            </a>
+                    </div>
+            </div>  
+        </div>
+
+    </div> 
+        <script src="main.js"></script>
+</body>
+<footer>
+   
+</footer>
+</html>

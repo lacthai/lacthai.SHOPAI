@@ -70,6 +70,7 @@ btnback2.onclick = function() {
   modal2.style.display = "none";
   modal3.style.display = "none";
 }
+//báo lỗi log in, log out
 
 //bot chat
 function FunctionBotChat() {
@@ -97,6 +98,8 @@ function updatecart() {
     var cart_item = document.getElementsByClassName("cart-items")[0];
     var cart_rows = cart_item.getElementsByClassName("cart-row");
     var total = 0;
+    var total2 = 0;
+    var number_product_add = 0;
     for (var i = 0; i < cart_rows.length; i++) {
       var cart_row = cart_rows[i]
       var price_item = cart_row.getElementsByClassName("cart-price")[0]
@@ -104,8 +107,10 @@ function updatecart() {
       var price = parseFloat(price_item.innerText)// chuyển một chuổi string sang number để tính tổng tiền.
       var quantity = quantity_item.value // lấy giá trị trong thẻ input
       total = total + (price * quantity)
+      number_product_add = cart_rows.length;
     }
     document.getElementsByClassName("cart-total-price")[0].innerText = total + '$'
+    document.getElementsByClassName("header_cart-notice")[0].innerText = number_product_add
     // Thay đổi text = total trong .cart-total-price. Chỉ có một .cart-total-price nên mình sử dụng [0].
   }
 // thay đổi số lượng sản phẩm
@@ -135,12 +140,14 @@ for (var i = 0; i < add_cart.length; i++) {
     addItemToCart(title, price, img)
     // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
     modal5.style.display = "block";
-    
+    number_product_add = cart_rows.length;
     updatecart()
+    document.getElementsByClassName("header_cart-notice")[0].innerText = number_product_add
   })
 }
 
 // Thêm vào giỏ
+
 var add_cart = document.getElementsByClassName("btn-cart");
 for (var i = 0; i < add_cart.length; i++) {
   var add = add_cart[i];
@@ -154,10 +161,11 @@ for (var i = 0; i < add_cart.length; i++) {
     addItemToCart(title, price, img)
     // Khi thêm sản phẩm vào giỏ hàng thì sẽ hiển thị modal
     modal5.style.display = "block";
-    
+    number_product_add = cart_rows.length;
     updatecart()
   })
 }
+
 
 function addItemToCart(title, price, img) {
     var cartRow = document.createElement('div')
@@ -200,5 +208,14 @@ function addItemToCart(title, price, img) {
 
 
 
-  //chat bot
+  //product
+
+  $(function () {
+    $(selector).click(function (e) { 
+      e.preventDefault();
+      alert()
+    });
+  });
+  
+  
   

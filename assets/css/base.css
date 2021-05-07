@@ -105,17 +105,15 @@ html {
   right: 10px;
   top: 10px;
   font-size: 1.6rem;
-  border: 1 solid olive;
-
+  color: darkgrey;
 }
 .close2 {
   cursor: pointer;
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 10px;
+  top: 10px;
   font-size: 1.6rem;
-  border: 1 solid olive;
-
+  color: darkgrey;
 }
 
 /* pagination */
@@ -329,4 +327,38 @@ html {
   #Log_in:hover {
     color: cyan;
   }
-
+  /* change-display-one-product */
+  .display_one_product {
+    display: flex;
+  }
+  .display_one_product-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .display_one_product-title {
+    font-size: 3.5rem;
+    padding: 50px 0;
+  }
+  .display_one_product-quantity-input {
+  }
+  .display_one_product-price {
+    padding: 50px 0;
+    font-size: 2.2rem;
+  }
+  .display_one_product-buy {
+    height: 40px;
+    width: 40%;
+    cursor: pointer;
+  }
+  .display_one_product_button-back {
+    position: relative;
+    top: 20px;
+    height: 30px;
+    width: 30px;
+    left: 20px;
+  }
+  .home_product-item_details {
+    text-decoration: none;
+    color: black;
+  }
+  
